@@ -1,13 +1,13 @@
-import React from "react";
-
-function About() {
+ function About() {
   return (
-    <section>
+    <section className="section about">
       <h2>About Me</h2>
       <p>
-         Hello! I'm a passionate web developer skilled in building responsive
-and modern web applications using React, JavaScript, HTML, and CSS.
-I enjoy creating user-friendly interfaces and learning new technologies.
+        I am a Frontend Developer specializing in building modern, responsive,
+        and high-performance web applications using React.
+      </p>
+      <p>
+        I focus on clean UI, reusable components, and scalable architecture.
       </p>
     </section>
   );

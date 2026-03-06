@@ -1,12 +1,10 @@
-import React from "react";
-
-function Contact() {
+ function Contact() {
   return (
-    <section>
+    <section className="section contact">
       <h2>Contact</h2>
-
-      <p>Email:aniketrajbhar1005@gmail.com</p>
-      <p>Phone: 9326197856</p>
+      <p>Email: aniketrajbhar1005@email.com</p>
+      
+      <p>GitHub: github.com/yourusername</p>
     </section>
   );
 }

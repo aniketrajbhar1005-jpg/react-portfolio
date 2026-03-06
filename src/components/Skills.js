@@ -1,16 +1,14 @@
- import React from "react";
-
-function Skills() {
+ function Skills() {
   return (
-    <section>
+    <section className="section skills">
       <h2>Skills</h2>
 
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
+      <span className="skill">React</span>
+      <span className="skill">JavaScript</span>
+      <span className="skill">HTML</span>
+      <span className="skill">CSS</span>
+      <span className="skill">Context API</span>
+      <span className="skill">Git & GitHub</span>
     </section>
   );
 }

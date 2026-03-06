@@ -1,13 +1,16 @@
-import React from "react";
-
-function Resume() {
+ function Resume() {
   return (
-    <section>
+    <section className="section">
       <h2>Resume</h2>
 
-      <a href="/resume.pdf" download>
+      <p>
+        Download my resume to learn more about my education, experience, and
+        technical skills.
+      </p>
+
+      <button>
         Download Resume
-      </a>
+      </button>
     </section>
   );
 }

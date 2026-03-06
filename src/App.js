@@ -1,22 +1,21 @@
- import React from "react";
- import "./App.css";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Resume from "./components/Resume";
-import Contact from "./components/Contact";
+ import React, { lazy, Suspense } from "react";
+import "./App.css";
+
+const About = lazy(() => import("./components/About"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
+const Resume = lazy(() => import("./components/Resume"));
+const Contact = lazy(() => import("./components/Contact"));
 
 function App() {
   return (
-    <div>
-      <Navbar />
+    <Suspense fallback={<div>Loading...</div>}>
       <About />
       <Projects />
       <Skills />
       <Resume />
       <Contact />
-    </div>
+    </Suspense>
   );
 }
 
